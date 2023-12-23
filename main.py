@@ -18,7 +18,7 @@ class Suprematism(QMainWindow):
         w = randint(0, 200)
         qp = QPainter()
         qp.begin(self)
-        qp.setBrush(QColor(0, 255, 255))
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
         qp.drawEllipse(200, 200, w, w)
         qp.drawEllipse(400, 400, w, w)
         qp.end()
